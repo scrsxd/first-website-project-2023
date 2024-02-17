@@ -1,0 +1,608 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url(pozadi.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+
+.banner {
+  width: 100%; 
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff7043; 
+  color: #fff;
+  padding: 0 20px; 
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+  font-size: 2rem;
+  margin-left: 20px;
+  animation: slideLeft 1s ease-out;
+  text-shadow: 2px 2px #000;
+  font-weight: bold;
+}
+
+.banner .header-scripts {
+ display: flex;
+align-items: center;
+
+}
+
+.banner .header-scripts a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-right: 10px;
+}
+
+.banner a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.banner ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner ul li {
+  margin-right: 20px;
+}
+
+.banner ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.banner ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.banner ul li a {
+  position: relative;
+}
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main {
+  margin-top: -240px;
+  border: thin none rgb(0,0,0);
+  width: 40%;
+  background: rgba(255, 150, 100, 0.9);
+  border-radius: 7.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-left: 35%; 
+  padding: 40px;
+  width: 40%; 
+  box-sizing: padding-box;
+  
+}
+
+.vlevo-menu {
+  display: grid;
+  justify-content: center; 
+  align-items: center; 
+  position: sticky;
+  top: 150px;
+  left: 7%;
+  width: 20%;
+  height: 20%;
+  overflow-x: hidden;
+  background: rgba(255, 112, 67, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+    
+.vlevo-menu ul li {
+  display: grid; 
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  padding: 10px 10px;
+  background: linear-gradient(to bottom, #FFD700, #FFC400);
+  border-radius: 5px;
+  cursor: pointer;
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  border: 1px solid black;
+  color:black;
+  
+}
+
+.vlevo-menu ul li:hover {
+  transform: scale(1.1); 
+  background: linear-gradient(to bottom, #FFD700, #DAA500);;
+  font-weight:bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.vlevo-menu ul li:active {
+  transform: scale(0.6); 
+}
+
+
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: rgba(255, 112, 67, 0.9);
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  line-height: 1.6; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-section:hover {
+  background-color: rgba(255, 112, 67, 0.8);
+  color: #FFE699;
+  transform: translateY(-5px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.clickable-section {
+  cursor: pointer;  
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+h2.vetsi {
+font-size: 1.6rem;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #ff7043; 
+  color: #fff;
+  text-align: center;
+ padding: 5 px 20px;
+  font-size: 0.8rem;
+  z-index:9999;
+}
+
+h3 {
+   font-size: 1.3rem;
+}
+
+
+@media (max-width: 800px) {
+  .banner h1 {
+   font-size:1.2rem;
+  }
+  
+  .main-vsechno {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 60%;
+  }
+  .vlevo-menu {
+    margin-left: 500px;
+    margin-top: -33px;
+    position: fixed;
+    width: 20%;
+    height: 60%;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    padding: 0;
+  }
+  .vlevo-menu ul li {
+  display:grid;
+  text-align:center;
+  align-items: center;
+  justify-content: center; 
+  padding: 0;
+  background: linear-gradient(to bottom, #FFD700, #FFC400);;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  border: 1px solid black;
+  color:black;
+}
+  
+
+  footer {
+    position: fixed; 
+    bottom: 0;
+    font-size: 0.5rem;
+    padding: 0px 10px;
+  }
+  
+  
+}
+
+ @media (max-width: 680px) {
+  .vlevo-menu {
+    margin-top: 0;
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-left: 0; 
+  }
+  
+  .main-vsechno {
+  
+  width: 83%;
+  }
+ 
+ .vlevo-menu ul li.schovat {
+  display: none;
+  }
+ 
+ footer {
+ padding: 0px;
+ font-size: 0.4rem;
+ }
+ 
+ }
+
+.main-text {
+  margin:auto;
+  min-width: 50%;
+  text-align: left;
+ font-size: 1.5rem;
+ margin-top:2.5%;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body.overfloa {
+overflow-y: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+#main-kontakt {
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top:5%;
+}
+
+#kontakt-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 681px) {
+  .vlevo-menu ul li.schovat {
+
+  }
+  footer .schovat {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .vlevo-menu ul li.schovat {
+    display: none; 
+  }
+  footer .schovat {
+    display: grid;
+    text-align:center;
+    align-items: center; 
+    justify-content: center;
+    margin-right: 30px;
+    padding: 10px 10px;
+    background: linear-gradient(to bottom, #FFD700, #FFC400);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+    color:black;
+  }
+  #main-kontakt {
+    width: 70%;
+  }
+  
+  body.omne-page header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff7043;
+    color: #fff;
+    padding: 20px;
+    z-index: 9999;
+  }
+
+  body.omne-page main {
+    margin-top: 80px; 
+  }
+}
+  
+.cool-button {
+  background-image: url("jungle.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  ransition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cool-button:hover {
+  background-size: 110%;
+  transform: scale(1.1);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  cursor:pointer;
+
+}
+
+.cool-button:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0)
+}
+
+.cool-button:focus {
+  outline: none;
+}
+
+
+
+.sekce-restaurace p {
+    text-align: justify;
+    line-height: 1.6;
+}
+#main-restaurace {
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 60%; 
+    background: rgba(255, 150, 100, 0.6);
+    border-radius: 7.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.sekce-restaurace {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(255, 112, 67, 0.6);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+@media (max-width: 800px) {
+    #main-restaurace {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px;
+    }
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.row .column {
+  position: relative;
+  overflow: hidden;
+}
+
+.row .column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1; 
+}
+
+.row .column:hover img {
+  transform: scale(1.1);
+  z-index: 1; 
+}
+
+.row .column::before {
+  content: attr(data-caption);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 2; 
+}
+
+.row .column:hover::before {
+  transform: translateY(0);
+  z-index: 2;
+}
+
+
+.zpet {
+  display: grid;
+  justify-content: center;
+  align-items: center; 
+  position: sticky;
+  top: 200px;
+  left: 7%;
+  width: 70px;
+  height: auto;
+  overflow-x: hidden;
+  background: rgba(255, 112, 67, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.zpet ul li {
+  display: grid; 
+  text-align:center;
+  align-items: center; 
+  justify-content: center; 
+  margin-right: 37.5px;
+  padding: 10px 10px;
+  background: linear-gradient(to bottom, #FFD700, #FFC400);;
+  border-radius: 5px;
+  cursor: pointer;
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  border: 1px solid black;
+  color:black;
+
+}
+
+
+.zpet ul li:hover {
+  transform: scale(1.1); 
+  background: linear-gradient(to bottom, #FFD700, #DAA500);
+  font-weight:bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.zpet ul li:active {
+  transform: scale(0.6); 
+}
+
+@media (max-width: 800px) {
+    .zpet {
+        display:none;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+      font-size: 12px;
+    }
+    
+    h1 {
+      font-size: 16px;
+    }
+    
+    button#music-toggle {
+      font-size: 10px;
+    }
+    
+    .header-scripts, .nav ul {
+      font-size: 10px;
+    }
+    
+    #hodiny {
+      font-size: 10px;
+    }
+  }
+ @media (max-width: 800px) {
+    .main-text {
+      width: 80%;
+    }
+    .main-kontakt {
+      width: 80%;
+    }
+
+header a img {
+  max-width: 100%;
+  height: auto;
+}
+  }
+
+@media print {
+  body {
+    font-family: times, cambria, serif;
+    font-size: 12pt;
+    background-color: white;
+    color: black;
+    margin: 2.5cm 2.5cm 2.5cm 4cm;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  img,
+  video,
+  audio,
+  iframe {
+    display: none;
+  }
+ 
+  .banner {
+    display: none;
+  }
+  
+  section {
+  width:100%;
+  }
+  
+  h1 {
+    font-size: 50pt;
+  }
+  .vlevo-menu {
+  display:none;
+  }
+
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+sitemap: http://recenze.kvalitne.cz/sitemap.xml

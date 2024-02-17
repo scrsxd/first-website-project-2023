@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Recenze restaurací v mém městě" />
+    <meta name="keywords" content="restaurace, jídlo, hodnocení, recenze, město" />
+    <meta name="author" content="Petr Štola" />
+    <meta name="robots" content="index, follow" />
+    <title>Recenze restaurací v mém městě</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styly.css" media="screen" />
+  </head>
+  <audio id="background-music" src="bgr_music.mp3" autoplay></audio>
+  <body>
+  
+  
+  <div id="nahoru"></div>
+    <header>
+      <div class="banner">
+        <h1>Recenze restaurací v mém městě</h1>   
+    <a href="https://seo-servis.cz/source-zdrojovy-kod/15296236" title="SEO Servis, optimalizace pro vyhledávače."><img src="https://seo-servis.cz/optimised.png" alt="Seo servis" /></a>
+       
+<button id="music-toggle" class="cool-button">Hudba zapnuta</button>
+
+
+         <div class="header-scripts"> <script src="datum.js"></script>
+       <a href="https://www.kalendar-online.cz" target="_blank" title="Celý kalendář"> <script src="dnes.js">
+       
+    
+      
+      </script></a>
+        
+        <script src=hodiny.js></script>
+       <a href="https://time.is" target="_blank" title="Přesné hodiny"><span id="hodiny">19:32:43</span></a></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="omne.html">O mně</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  
+      <nav class="vlevo-menu">
+  <ul>
+    <li onclick="redirectTo('#mr-thai');">Mr. Thai</li>
+    <li onclick="redirectTo('#tandoor');">Indická resturace Tandoor</li>
+    <li onclick="redirectTo('#met');">Met - sushi restaurace</li>
+    <li onclick="redirectTo('#zbytek');">Jídla z ostatních nezařazených restaurací</li>
+    <li class="schovat" onclick="redirectTo('#nahoru');" >Zpět nahoru</li>
+  </ul>
+</nav>
+
+      <main class="main-vsechno">     
+        <h2 class="vetsi">Vítejte na Recenzích restaurací v mém městě!</h2>
+        
+  
+  
+  <p>Vítejte na recenzích restaurací v mém městě! Pokud hledáte nová místa pro vynikající jídlo a chcete se inspirovat, jste na správném místě. 
+  Tato stránka slouží jako průvodce po nejlepších restauracích v mém městě, které jsem osobně vyzkoušel a posoudil. Zážitky z místních restaurací mě vždy fascinovaly a rád 
+  bych se podělil o své názory s vámi. Najdete zde různé kategorie restaurací, jako jsou thajské, indické, sushi a mnoho dalších. Doufám, že vám mé recenze pomohou najít vaši novou oblíbenou restauraci!</p>
+  
+  <h2>Restaurace v nabídce:</h2>
+
+<section class="clickable-section" onclick="window.location.href='mrthai.html';">
+  <h2 id="mr-thai">Thajské restaurace:</h2>
+
+    <h3>Mr. Thai</h4>
+    <p>Tento podnik nabízí vynikající thajskou kuchyni s autentickými chutěmi a příjemnou atmosférou. V menu najdete různá thajská jídla, od tradičních curry až po exotické saláty. Pokud máte rádi pálivou stravu, neváhejte a vyzkoušejte si jejich oblíbené pálivé pokrmy.</p>
+  
+</section>
+<section class="clickable-section" onclick="window.location.href='tandoor.html';">
+  <h2 id="tandoor">Indické restaurace:</h2>
+
+    <h3>Indická resturace Tandoor</h4>
+    <p>Pokud hledáte autentickou indickou kuchyni s kořeněnými chutěmi a kvalitními surovinami, rozhodně navštivte Tandoor. Tento podnik nabízí široký výběr jídel z různých regionů Indie, jako jsou masové, vegetariánské nebo veganské pokrmy. Doporučuji vyzkoušet jejich slavné kari nebo tandoori kuře.</p>
+  
+</section>
+
+
+<section class="clickable-section" onclick="window.location.href='met.html';">
+  <h2 id="met">Sushi restaurace:</h2>
+
+    <h3>Met - sushi restaurace</h4>
+    <p>Milovníci sushi nebudou zklamaní v Metu. Tento podnik nabízí široký výběr různých druhů sushi, od klasických rolů po speciální sushi s různými omáčkami a chutěmi. Pokud máte rádi čerstvé ryby a kvalitní suroviny, Met je ideální volbou pro vás.</p>
+  
+</section>
+
+
+<section class="clickable-section" onclick="window.location.href='zbytek.html';">
+  <h2 id="zbytek">Jídla z ostatních nezařazených restaurací:</h2>
+  
+    <p>Zde najdete recenze na další restaurace v mém městě, které nezapadají do žádné z kategorií. Tyto podniky nabízejí různé druhy jídel, od mexických po italské a mnoho dalších. Doporučuji prozkoumat tuto kategorii a najít nová místa pro objevování skvělých jídel.</p>
+</section>
+
+
+      </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+<script src="redirect.js"></script>
+
+<script src="nahoru_dolu.js">
+
+    
+</script>
+
+ <script src="music_script.js"></script>
+
+
+ 
+    <footer>
+
+      <p>   <script type="text/javascript" src="aktualizace.js"></script>
+       </p>  <p>&copy; 2023 Petr Štola</p>
+    </footer>
+ 
+
+
+
+  </body>
+</html>
+
