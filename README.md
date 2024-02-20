@@ -1,2 +1,2 @@
-# html-portfolio
-My Website Journey.
+# first-site
+The Start of my Website Journey.
